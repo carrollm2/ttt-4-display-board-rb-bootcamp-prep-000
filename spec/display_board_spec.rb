@@ -162,11 +162,7 @@ describe "#display_board in 'lib/display_board.rb" do
       # Uncomment the following lines of code by removing the # at line start.
       # Then edit the following lines to represent a board entirely filled with X.
       # Remember, every space and every character is important.
-      board = ["O", "O", "O", "O", "O", "O", "O", "O", "O"] # This is not correct
 
-      # Don't touch the following lines.
-      output = capture_puts{ display_board(board) } if defined?(display_board)
-      rows = output.split("\n")
 
       # *** Edit the lines below ***
       # *** Uncomment the lines below ***
@@ -188,7 +184,11 @@ describe "#display_board in 'lib/display_board.rb" do
       # and make a few simple edits to convert the previous example to this
       # example's situation.
 
+      board = ["O", "O", "O", "O", "O", "O", "O", "O", "O"] # This is not correct
 
+      # Don't touch the following lines.
+      output = capture_puts{ display_board(board) } if defined?(display_board)
+      rows = output.split("\n")
 
       expect(rows[0]).to eq(" O | O | O ")
       expect(rows[1]).to eq("-----------")
