@@ -167,7 +167,7 @@ describe "#display_board in 'lib/display_board.rb" do
       # Don't touch the following lines.
       output = capture_puts{ display_board(board) } if defined?(display_board)
       rows = output.split("\n")
-      
+
       # *** Edit the lines below ***
       # *** Uncomment the lines below ***
       expect(rows[0]).to eq(" X | X | X ")
